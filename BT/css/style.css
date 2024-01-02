@@ -7,6 +7,25 @@
           box-sizing: border-box;
 }
 
+#top .container-fluid {
+  position: relative;
+}
+#top .table {
+  background: #333;
+  color: white;
+  border: 1px solid #000;
+}
+#top .table td {
+  border: 1px solid #000;
+  color: white;
+}
+#top .table:hover {
+  color: white;
+}
+#top .table tr:hover {
+  background: #444;
+}
+
 .navbar {
   height: 80px;
 }
@@ -24,6 +43,9 @@
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
+#section01 .carousel-control-prev-icon {
+  display: none;
+}
 #section01 .carousel-control-next {
   position: absolute;
   height: 0;
@@ -32,6 +54,9 @@
   transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+#section01 .carousel-control-next-icon {
+  display: none;
 }
 
 #section01:hover .carousel-control-prev {
@@ -44,6 +69,9 @@
   top: 60%;
   opacity: 1;
 }
+#section01:hover .carousel-control-prev-icon {
+  display: block;
+}
 #section01:hover .carousel-control-next {
   -webkit-transform: translateX(10px);
           transform: translateX(10px);
@@ -53,6 +81,9 @@
   position: absolute;
   top: 60%;
   opacity: 1;
+}
+#section01:hover .carousel-control-next-icon {
+  display: block;
 }
 
 #section02 {

@@ -7,6 +7,7 @@
 }
 
 @import '../mixins/rwd';
+@import 'top';
 
 .navbar {
   height: 80px;
@@ -21,11 +22,17 @@
     left: 10px;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   }
+  .carousel-control-prev-icon{
+    display: none;
+  }
   .carousel-control-next {
     position: absolute;
     height: 0;
     right: 10px;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  .carousel-control-next-icon{
+    display: none;
   }
 }
 
@@ -39,6 +46,9 @@
     top: 60%;
     opacity: 1;
   }
+  .carousel-control-prev-icon{
+    display: block;
+  }
   .carousel-control-next {
     transform: translateX(10px);
     background-color: orange;
@@ -47,6 +57,9 @@
     position: absolute;
     top: 60%;
     opacity: 1;
+  }
+  .carousel-control-next-icon{
+    display: block;
   }
 }
 

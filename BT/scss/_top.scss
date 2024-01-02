@@ -1,0 +1,21 @@
+#top{
+  .container-fluid{
+    position: relative;
+  }
+  .table{
+    background: #333;
+    color: white;
+    border: 1px solid #000;
+  }
+  .table td{
+    border: 1px solid #000;
+    color: white;
+  }
+  .table:hover{
+    color: white;
+  }
+  .table tr:hover{
+    background: #444;
+  }
+
+}
