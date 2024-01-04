@@ -3,31 +3,23 @@
 *::after {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
-#top .container-fluid {
-  position: relative;
+.navbar .nav-link:focus,
+.navbar .nav-link:hover {
+  color: wheat;
 }
-#top .table {
-  background: #333;
-  color: white;
-  border: 1px solid #000;
-}
-#top .table td {
-  border: 1px solid #000;
-  color: white;
-}
-#top .table:hover {
-  color: white;
-}
-#top .table tr:hover {
-  background: #444;
+.navbar img {
+  width: 40px;
+  height: 40px;
 }
 
-.navbar {
-  height: 80px;
+.navbar-collapse {
+  background-color: black;
+}
+
+.nav-link {
+  color: white;
 }
 
 #section01 {
@@ -43,7 +35,8 @@
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
-#section01 .carousel-control-prev-icon {
+#section01 .carousel-control-prev-icon,
+#section01 .carousel-control-next-icon {
   display: none;
 }
 #section01 .carousel-control-next {
@@ -55,8 +48,19 @@
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
-#section01 .carousel-control-next-icon {
-  display: none;
+
+#section01::after {
+  content: "";
+  width: 80%;
+  height: 500px;
+  background: gray;
+  opacity: 0.5;
+  display: block;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 #section01:hover .carousel-control-prev {
@@ -66,7 +70,7 @@
   height: 60px;
   width: 60px;
   position: absolute;
-  top: 60%;
+  top: 55%;
   opacity: 1;
 }
 #section01:hover .carousel-control-prev-icon {
@@ -79,10 +83,31 @@
   height: 60px;
   width: 60px;
   position: absolute;
-  top: 60%;
+  top: 55%;
   opacity: 1;
 }
 #section01:hover .carousel-control-next-icon {
+  display: block;
+}
+
+#section01:not(:hover) .carousel-control-prev {
+  background-color: orange;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 55%;
+  opacity: 0;
+}
+#section01:not(:hover) .carousel-control-next {
+  background-color: orange;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 55%;
+  opacity: 0;
+}
+#section01:not(:hover) .carousel-control-prev-icon,
+#section01:not(:hover) .carousel-control-next-icon {
   display: block;
 }
 
