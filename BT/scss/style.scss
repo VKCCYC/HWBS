@@ -8,8 +8,5 @@
 @import '../mixins/rwd';
 @import 'top';
 @import '_section01.scss';
-
-
-#section02 {
-  height: 100vh;
-}
+@import '_section02.scss';
+@import '_section03.scss';
