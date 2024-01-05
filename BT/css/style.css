@@ -130,10 +130,33 @@
 
 #section02 {
   height: 100vh;
-  position: relative;
+  display: inline;
 }
 #section02 img {
   width: 100%;
+}
+#section02 .h5 {
+  color: #ffc107;
+}
+#section02 .line {
+  display: inline-block;
+  width: 50px;
+  border: 1px solid black;
+}
+#section02 .fs-50 {
+  font-size: 50px;
+}
+#section02 .y {
+  color: #ffc107;
+}
+#section02 .b {
+  color: #03324d;
+}
+#section02 .mb-40 {
+  margin-bottom: 40px;
+}
+#section02 .col p {
+  line-height: 1.5rem;
 }
 
 #section03 {

@@ -1,7 +1,33 @@
 #section02 {
   height: 100vh;
-  position: relative;
+  display: inline;
+  
   img{
     width: 100%;
+  }
+  .h5{
+    color: #ffc107;
+    }
+  .line{
+    display:inline-block;
+    width: 50px;
+    border: 1px solid black;
+  }
+  .fs-50{
+    font-size: 50px;
+  }
+  .y{
+    color: #ffc107;
+  }
+  .b{
+    color: #03324d;
+  }
+  .mb-40{
+    margin-bottom: 40px;
+  }
+  .col{
+    p{
+      line-height: 1.5rem;
+    }
   }
 }
