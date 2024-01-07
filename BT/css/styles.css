@@ -31,7 +31,7 @@
 }
 #section01 img {
   height: 100vh;
-  width: 150%;
+  width: 100%;
 }
 #section01 .swiper-button-prev,
 #section01 .swiper-button-next {
@@ -234,6 +234,9 @@
 }
 #section03 svg {
   color: #d6a307;
+}
+#section03 .your-element {
+  padding: 20px;
 }
 
 #section04 {
